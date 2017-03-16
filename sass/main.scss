@@ -1,0 +1,50 @@
+@import "compass";
+
+.demo {
+    padding-top: 0;
+}
+
+label, input {
+    margin-top: .25em;
+}
+
+input, button {
+    @include border-radius(5px);
+    @include box-sizing(border-box);
+    border: none;
+    width: 100%;
+}
+
+label, input, button {
+    display: block;
+    padding: .5em;
+}
+
+.panel {
+    @include border-radius(0 0 10px 10px);
+    background-color: #ccc;
+    display: none;
+    margin: 0 auto;
+    padding: 30px;
+    width: 300px;
+}
+
+.slide {
+    @include border-radius(0 0 10px 10px);
+    background: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: initial;
+}
+
+#submit {
+    background: #43433d;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+}
